@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=500, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js" type="text/javascript" language="javascript"></script>
+    <link rel="stylesheet" href="tileset.css" />
+  </head>
+  <body onLoad="drawCanvas()">
+    <header>
+      <h1>TileSet Creator</h1>
+    </header>
+    <div class="container">
+      <div id="tilesetcontainer">
+        <div class="tileset-container_selection tileset-container_selection__hidden"></div>
+        <div>
+          <canvas onclick="selectTile(event)" id="canvas" width="340px" height="340px" style="background: #fff; magrin: 20px"></canvas>
+        </div>
+        <div style="display: inline">
+          <h4 style="display: inline">Selected Tile is :</h4>
+          <span style="display: inline" id="spanSelTile"></span>
+        </div>
+        <div>
+          <button onClick="deleteTile()">Delete Tile</button>
+          <button onClick="exportImage()">Export Tileset</button>
+          <button onClick="clearCanvas()">Clear Tileset</button>
+        </div>
+      </div>
+
+      <div id="dropzone" class="dropzone" onclick="divclick()">
+        <span class="drop-zone_prompt">Drop 32x32 png file here, then click to add to grid</span>
+        <input type="file" class="dropfile" name="myFile" />
+        <img id="myImage" src="" />
+      </div>
+    </div>
+    <script>
+      callback()
+    </script>
+  </body>
+</html>

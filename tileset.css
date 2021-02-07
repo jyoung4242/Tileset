@@ -1,0 +1,52 @@
+.dropzone {
+  max-width: 200px;
+  height: 200px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  color: #cccccc;
+  border: 4px dashed #009578;
+  border-radius: 10px;
+}
+
+.dropzone--over {
+  border-style: solid;
+}
+
+.dropfile {
+  display: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#myImage {
+  max-width: 200px;
+  height: 200px;
+}
+
+.drop-zone_prompt__hidden {
+  display: none;
+}
+
+.tileset-container_selection {
+  position: absolute;
+  outline: 3px solid cyan;
+  left: 0;
+  top: 0;
+  width: 31px;
+  height: 31px;
+}
+
+.tileset-container_selection__hidden {
+  display: none;
+}
